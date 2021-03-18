@@ -7,14 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>課表</title>
     <style>
-        th{font-size: 6px;
+        th{font-size: 2rem;
             background-color: lightsalmon;
             color: rgb(34, 16, 102) ;
 
         }
+        td{
+            font-size: 2rem;
+        }
         table{
-            border: 3px;border-radius: 10px;border-style: #FFD382 dashed;
-            background-color: rgb(255, 255, 255);
+            border: 6px;border-collapse: separate;border-color: #FFD382 dashed;
+            border
+            "3px";border:6px #FFD382 dashed ;padding: 5px;
             padding: 5px;
             ;
 
@@ -27,13 +31,20 @@
             background-color: wheat;
             color: rgb(161, 31, 31);
         }
+        #dismiss{
+            background-color: rgb(228, 228, 101);
+            color: rgb(226, 23, 23);
+        }
+        #title{
+            font-family:DFKai-sb;
+            font-size: 3rem ;}
     </style>
 </head>
 
 <body>
     <div class="sexborder">
-        <table>
-            <caption style="font-family: DFKai-sb;font-size: 3rem;">逢甲高中課表</caption>
+        <table cellpadding="15"border="5px">
+            <caption id="title">逢甲高中課表</caption>
             <tr >
                 <th>時間</th>
                 <th>星期一</th>
@@ -58,7 +69,7 @@
             </tr>
             <tr>
                 <td id="time">
-                10:10~11:00</td>
+                    10:10~11:00</td>
                 <td>體育</td>
                 <td>國文</td>
                 <td>英文</td>
@@ -68,11 +79,10 @@
             <tr>
                 <td id="time">
                     11:00~11:10</td>
-                <td colspan="5" align="center" ; style="background-color: wheat;color: rgb(161, 31, 31);">休息</td>
+                <td id="break"colspan="5" align="center">休息</td>
             </tr>
             <tr>
-                <td
-                    style="color: mediumpurple;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, monospace;">
+                <td id="time">
                     11:10~12:00</td>
                 <td>美術</td>
                 <td>資訊</td>
@@ -81,14 +91,12 @@
                 <td>公民</td>
             </tr>
             <tr>
-                <td
-                    style="color: mediumpurple;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, monospace;">
+                <td id="time">
                     12:00~13:10</td>
-                <td colspan="5" align="center" ; style="background-color: wheat;color: rgb(161, 31, 31);">午休</td>
+                <td id="break" colspan="5" align="center" >午休</td>
             </tr>
             <tr>
-                <td
-                    style="color: mediumpurple;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, monospace;">
+                <td id="time">
                     13:10~14:00</td>
                 <td>生物</td>
                 <td>國文</td>
@@ -97,12 +105,9 @@
                 <td>英文</td>
             </tr>
             <tr>
-                <td
-                    style="color: mediumpurple;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, monospace;">
+                <td id="time">
                     14:00</td>
-                <td colspan="5" align="center" ; style="background-color: rgb(228, 228, 101);color: rgb(226, 23, 23);">
-                    <b>放學</b>
-                </td>
+                <td id="dismiss"colspan="5" align="center" ; style="background-color: ">放學</td>
             </tr>
         </table>
     </div>
