@@ -7,29 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>網誌</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Train+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
     <style>
         h1 {
-            font-family: 'Ranchers', cursive;
+            font-family: 'Noto Sans TC', sans-serif;
             font-size: 5rem;
             color: darksalmon;
+            text-align: center;
+            text-shadow: 2px 4px 5px red
         }
 
-        body {
+        body::after {
             background-image: url(https://i.imgur.com/xPdjbI2.jpeg);
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
             background-position: center;
-            background-repeat: space;
+            background-size: cover;
 
+        }
+
+        footer {
+            font-family:'Noto Sans TC', sans-serif ;
+            background-color: rgba(127, 255, 212, 0.692);
+            height: 50px;
+        }
+        article{
+            width: 800px;
+            font-family: 'Patrick Hand', cursive;
+            background-color: rgba(245, 245, 220, 0.753);
+            font-size: 1.5rem;color: rgb(1, 1, 31);
+            text-shadow: 2px 2px 5px rgba(12, 159, 245, 0.863)
+        }
+        .title{
+            color: darkslateblue;font-size: 2rem;
+        }
+        aside{
+            background-color: rgba(255, 105, 180, 0.842);
+            color: midnightblue;
+            font-size: 20px;
+            text-align: center;
+            width: 200px;
         }
     </style>
 </head>
 
+
 <body>
     <a href="https://www.google.com.tw/" target="_blank"><img width="200" height="50"
             src="https://pngimg.com/uploads/google/google_PNG19631.png"></a>
-    <h1>星期三的網誌</h1>
+    <h1>Wednesday's blog</h1>
+    <aside>
+        <h3>主題</h3>
+        <ul>
+            <li>星期三各地語言</li>
+            <li>星期三亞洲語言</li>
+            <li>星期三傳說與命名</li>
+        </ul>
+    </aside>
 
-    <article></article>
+    <article>
+        <h3 class="title">星期三各地語言</h3>
+        &emsp;&emsp;星期三，又稱禮拜三或週三。是指一週中星期二之後、星期四之前的那一天。</br>
+        &emsp;&emsp;星期三是一週的第四天，星期三的拉丁語名字是dies Mercurii，即水星日或墨邱利日；</br>
+        &emsp;&emsp;法語是mercredi，西班牙語是miércoles，他加祿語是Miyerkules，均來源於拉丁語；</br>
+        &emsp;&emsp;英語是Wednesday，來源於日爾曼主神Woden，即大神奧丁（Odin）。</br>
+        &emsp;&emsp;俄語是среда，意思是「中間那一天」（舊曆以星期日為第一天）。</br>
+    </article>
+    <article>
+        <h3 class="title">星期三亞洲語言</h3>
+        &emsp;&emsp;在古代中國、台灣日治時期和現在的日本、韓國、朝鮮，一星期以「七曜」來分別命名，星期三叫水曜日。</br>
+        &emsp;&emsp;在中國民間口語稱禮拜三，在閩南話也簡稱拜三。</br>
+        &emsp;&emsp;在一些地方，星期三又稱為「小週末」，部份學校在星期三僅上午上課。</br>
+        &emsp;&emsp;在泰國，星期三的代表色是綠色。</br>
+    </article>
+    <article>
+        <h3 class="title">星期三傳說與命名</h3>
+        &emsp;&emsp;Wednesday(Wed.)—Day of the Mercury(水星日)。</br>
+        &emsp;&emsp;這一天是以北歐神話中掌管文化、藝術、戰爭、死亡的神Woden的名字命名的。Woden是戰神Tyr的父親；</br>
+        &emsp;&emsp;他勇敢地將在宇宙間製造混亂的「混沌」（Chaos）殺死，並將陣亡將士的英靈請到天界，使他們享受天倫之樂。</br>
+        &emsp;&emsp;為懷念他，人們用他的名字命名了Wednesday這一天。</br>
+    </article>
+
+
+
+
 </body>
+<footer>
+    <a
+        href="https://zh.wikipedia.org/wiki/%E6%98%9F%E6%9C%9F%E4%B8%89">以上內容於自：https://zh.wikipedia.org/wiki/%E6%98%9F%E6%9C%9F%E4%B8%89</a>
+</footer>
 
 </html>
