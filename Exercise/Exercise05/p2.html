@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        body {
+            background-image: url("https://celclipmaterialprod.s3-ap-northeast-1.amazonaws.com/25/85/1728525/example");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        p.dotted {
+            border-style: dotted dashed groove;border-radius: 10px;font-size: 2rem;
+            width: 100vh;
+            height: 4rem;
+            margin: 12px;color: lightcoral;
+            background-color: rgba(135, 206, 250, 0.644);
+            vertical-align:middle;text-shadow: 2px 2px 5px red
+
+        }
+
+        p.dashed {
+            border-style: dashed;
+        }
     </style>
 </head>
+
 <body>
-    
+    <p class="dotted" >A dotted border中文.</p>
+    <p class="dashed">A dashed border.</p>
 </body>
+
 </html>
