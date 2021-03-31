@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課表</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        table,
+        th,
+        td {
+            border: 8px solid black;
+        }
+
+        th {
+            font-size: 2rem;
+            background-color: lightsalmon;
+            color: rgb(34, 16, 102);
+
+        }
+
+        td {
+            font-size: 2rem;;
+        }
+
+        .week {
+            font-family: 'Patrick Hand', cursive;
+            ;
+        }
+
+        table {border-radius: 10px;
+            border: 6px;
+            border-collapse: collapse;
+            border-color: #FFD382 dashed;
+            padding: 5px;
+            ;
+
+        }
+
+        #time {
+            font-family: 'Patrick Hand', cursive;
+            ;
+            color: mediumpurple;
+        }
+
+        #break {
+            background-color: wheat;
+            color: rgb(161, 31, 31);
+        }
+
+        #dismiss {
+            background-color: rgb(228, 228, 101);
+            color: rgb(226, 23, 23);
+        }
+
+        #title {
+            font-family: DFKai-sb;
+            font-size: 3rem;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div >
+        <table cellpadding="15" border="5px">
+            <caption id="title">逢甲高中課表</caption>
+            <tr>
+                <th class="week">week</th>
+                <th class="week">Monday</th>
+                <th class="week">Tuesday</th>
+                <th class="week">Wednesday</th>
+                <th class="week">Thursday</th>
+                <th class="week">Friday</th>
+            </tr>
+            <tr>
+                <td id="time">
+                    09:10~10:00</td>
+                <td>體育</td>
+                <td>英文</td>
+                <td>數學</td>
+                <td>歷史</td>
+                <td>物理</td>
+            </tr>
+            <tr>
+                <td id="time">
+                    10:00~10:10</td>
+                <td id="break" colspan="5" align="center">休息</td>
+            </tr>
+            <tr>
+                <td id="time">
+                    10:10~11:00</td>
+                <td>體育</td>
+                <td>國文</td>
+                <td>英文</td>
+                <td>地理</td>
+                <td>化學</td>
+            </tr>
+            <tr>
+                <td id="time">
+                    11:00~11:10</td>
+                <td id="break" colspan="5" align="center">休息</td>
+            </tr>
+            <tr>
+                <td id="time">
+                    11:10~12:00</td>
+                <td>美術</td>
+                <td>資訊</td>
+                <td>國文</td>
+                <td>英文</td>
+                <td>公民</td>
+            </tr>
+            <tr>
+                <td id="time">
+                    12:00~13:10</td>
+                <td id="break" colspan="5" align="center">午休</td>
+            </tr>
+            <tr>
+                <td id="time">
+                    13:10~14:00</td>
+                <td>生物</td>
+                <td>國文</td>
+                <td>數學</td>
+                <td>音樂</td>
+                <td>英文</td>
+            </tr>
+            <tr>
+                <td id="time">
+                    14:00</td>
+                <td id="dismiss" colspan="5" align="center">放學</td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .g{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        body{
+            display: grid;
+            margin: 0;
+        }
+        header{
+            grid-column: 1/span 3;
+            background-color: rgba(25, 25, 112, 0.555);
+        }
+        div{
+
+        }
+        main{
+            background-color: orchid;
+        }
+        aside{
+            background-color: palegreen;
+            
+        }
+        footer{
+            background-color: rgba(36, 21, 102, 0.726);
+        }
+    </style>
+</head>
+<body class="g">
+    <header>選單</header>
+    <div >
+        <aside>
+            <a>選單一</br></a>
+            <a>選單二</br></a>
+            <a>選單三</br></a>
+            <a>選單四</br></a>
+            <a>選單五</br></a>
+
+
+        </aside>
+        <main>主頁</br>
+            <h3>morning</h3>
+        </main>
+        <aside>
+            <ul>
+                <li>文章一</li>
+                <li>文章二</li>
+                <li>文章三</li>
+            </ul>
+        </aside>
+
+
+    </div>
+    <footer>底下註腳</footer>
+    
+</body>
+</html>
