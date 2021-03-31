@@ -17,11 +17,51 @@
 
         }
         main{
-            grid-column: 2/span 2;
-            background-color:white ;
+            grid-area: 2/4/10/1;
+            display: grid;
+            grid-template:repeat(9,1fr)/1fr 1fr;
+            background-color:rgb(161, 106, 106) ;
+            border: 2px black solid;
         }
         footer{
+            grid-column: 1/span 2;
             background-color: yellow;
+        }
+        .i{
+            background-color: yellow;
+            grid-column: 1fr;
+            border: 2px black solid;
+        }
+        .j{
+            grid-area: 2/1/6/2;
+            border: 2px black solid;
+        }
+        .k{
+            grid-area: 2/2/5/3;
+            border: 2px black solid;
+        }
+        .l{
+            grid-column: 2;
+            border: 2px black solid;
+        }
+        .m{
+            grid-area: 6/1/10/2;
+            border: 2px black solid;
+        }
+        .n{
+            grid-area: 6/2/7/3;
+            border: 2px black solid;
+        }
+        .o{
+            grid-area: 7/2/11/3;
+            border: 2px black solid;
+        }
+        .p{
+            grid-area: ;
+        }
+        #a{
+            display: grid;
+            grid-template: repeat(3,1fr) repeat(4,1fr);
         }
     </style>
 </head>
@@ -30,6 +70,22 @@
         <a>資產負債表</a>
     </header>
     <main>
+        <div class="i">資產</div>
+        <div class="i">負債及股東權益</div>
+        <div id="a" class="j">
+            <div>流動資金</div>
+            <div>現金</div>
+            <div>399,526</div>
+            <div>存貨</div>
+            <div>819954</div>
+            <div>應收帳款</div>
+            <div>2164974</div>
+        </div>
+        <div class="k">流動負債</div>
+        <div class="l">非流動負債</div>
+        <div class="m">非流動資產</div>
+        <div class="n">負債合計</div>
+        <div class="o">股東權益</div>
 
     </main>
     <footer>
