@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<style>
+    .aa {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .table {
+        grid-column: span 1;
+        display: grid;
+        grid-template: repeat(9, 1fr) repeat(6, 1fr);
+        border: 1px black solid;
+        margin: 1px;
+        border-collapse: separate;
+        border: inline 1px black;
+        ;
+    }
+    *{
+        border: 1px black solid;
+    }
+
+    header {
+        grid-column: span 1;
+        grid-rows: 5px;
+
+        background-color: lightskyblue;
+        text-align: center;
+
+        font-size: 1 rem;
+        
+        }
+
+    footer {
+        grid-column: span 1;
+        background-color: yellow;
+    }
+</style>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <div ></div>
+    <table class="table table-bordered">
+        <tbody >
+            <tr>
+                <th>資產</th>
+                <th>負債及股東權益</th>
+            </tr>
+            <tr>
+                <th>流動資產</th>
+                <th></th>
+            </tr>
+        </tbody>
+      </table>>
+
+        </main>
+        <footer></footer>
+
+
+
+</body>
+
+</html>
