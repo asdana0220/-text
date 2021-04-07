@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .g {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(11, 1fr);
+        }
+
+        header {
+            grid-column: 1/span 2;
+            background-color: skyblue;
+
+        }
+
+        main {
+            grid-area: 2/4/10/1;
+            display: grid;align-items: center;
+            grid-template-columns: 20px 1ft 1ft 25px 1ft 1ft;
+            grid-template-rows: repeat(9,1ft);
+            background-color: rgb(255, 255, 255);
+            border: 2px black solid;
+        }
+
+        footer {
+            grid-column: 1/span 2;
+            background-color: yellow;
+        }
+
+        .i {
+            background-color: yellow;
+            grid-column: 1fr;
+            border: 2px black solid;
+        }
+
+        .j {
+            grid-area: 2/1/6/2;
+            border: 2px black solid;
+            display: grid;
+            grid-template: repeat(4, 1fr) repeat(3, 1fr);
+        }
+
+
+
+    </style>
+</head>
+
+<body class="g">
+    <header>
+        <a>資產負債表</a>
+    </header>
+    <main>
+        <div class="i">資產</div>
+        <div class="i">負債及股東權益</div>
+        <div class="j">
+            <div class="jb">流動資金</div>
+            <div class="jc">現金</div>
+            <div class="jd">399,526</div>
+            <div class="je">存貨</div>
+            <div class="jf">819,954</div>
+            <div class="jg">應收帳款</div>
+            <div class="ji">945,494</div>
+            <div class="jh">2164974</div>
+        </div>
+        </div>
+        <div class="k">
+            <div class="kb">流動負債</div>
+            <div class="jc">短期借款</div>
+            <div class="jd">1,634,870</div>
+            <div class="jf">1,912,740</div>
+            <div class="jg">應付帳款</div>
+            <div class="ji">277,870</div>
+        </div>
+
+ 
+    <footer>
+
+    </footer>
+</body>
+
+</html>

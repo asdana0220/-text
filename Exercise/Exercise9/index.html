@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,15 @@
     <title>Document</title>
     <style>
         .g {
+            text-align:center;
             display: grid;
+            ;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(11, 1fr);
+
         }
 
         header {
+            display: grid;
             grid-column: 1/span 2;
             background-color: skyblue;
 
@@ -21,16 +24,18 @@
 
         main {
             grid-area: 2/4/10/1;
-            display: grid;align-items: center;
-            grid-template-columns: 20px 1ft 1ft 25px 1ft 1ft;
-            grid-template-rows: repeat(9,1ft);
+            display: grid;
+            grid-template: repeat(9, 25px)/1fr 1fr;
             background-color: rgb(255, 255, 255);
-            border: 2px black solid;
+            border: 0px black solid;
         }
 
         footer {
+            display: grid;
             grid-column: 1/span 2;
             background-color: yellow;
+            display: grid;
+            grid-template-columns: 120px 1fr 1fr 125px 1fr 1fr;
         }
 
         .i {
@@ -43,21 +48,159 @@
             grid-area: 2/1/6/2;
             border: 2px black solid;
             display: grid;
-            grid-template: repeat(4, 1fr) repeat(3, 1fr);
+            grid-template: repeat(4, 25px) /100px 1fr 1fr;
+
         }
 
+        .k {
+            grid-area: 2/2/5/3;
+            border: 2px black solid;
+            display: grid;
+            grid-template-columns: 125px 1fr 1fr;
+            grid-template-rows: repeat(3, 25px);
+        }
+
+        .l {
+            display: grid;
+            grid-column: 2;
+            border: 2px black solid;
+            grid-template-columns: 125px 1fr 1fr;
+            grid-template-rows: 25px;
 
 
+        }
+
+        .m {
+            grid-area: 6/1/10/2;
+            border: 2px black solid;
+            display: grid;
+            grid-template-columns: 100px 1fr 1fr;
+            grid-template-rows: repeat(4, 25px);
+        }
+
+        .n {
+            grid-area: 6/2/7/3;
+            border: 2px black solid;
+            display: grid;
+            grid-template-columns: 125px 1fr 1fr;
+            grid-template-rows: 25px;
+        }
+
+        .o {
+            grid-area: 7/2/11/3;
+            border: 2px black solid;
+            display: grid;
+            grid-template:repeat(3,25px)/125px 1fr 1fr
+        }
+
+        .jb {
+            grid-area: 1/1/5/1;
+            background-color: rgb(50, 190, 32);
+           
+            
+        }
+
+        .jc {
+            grid-area: 1/2/2/2;
+            border: 1px lightblue solid;
+
+        }
+
+        .jd {
+            grid-area: 1/3/1/4;
+            border: 1px lightblue;
+
+        }
+
+        .je {
+            grid-area: 2/2/3/3;
+            border: 1px lightskyblue solid;
+        }
+
+        .jf {
+            grid-area: 2/3/3/4;
+            border: 1px lightskyblue solid
+        }
+
+        .jg {
+            grid-area: 3/2/4/3;
+            border: 1px lightskyblue solid
+        }
+
+        .jh {
+            grid-area: 4/3/5/4;
+            border: 1px lightskyblue solid
+        }
+
+        .ji {
+            grid-area: 3/3/4/4;
+            border: 1px lightskyblue solid
+        }
+
+        .kb {
+            grid-area: 1/1/4/2;
+            background-color: magenta;
+
+        }
+
+        .la {
+            grid-column: 1/2;
+            background-color: darkorchid;
+        }
+
+        .lb {
+            grid-area: 1/2/2/3;
+            border: 1px lightskyblue solid
+        }
+
+        .lc {
+            grid-area: 1/3/2/4;
+            border: 1px lightskyblue solid;
+        }
+
+        .ma {
+            grid-area: 1/1/5/2;
+            background: green;
+        }
+
+        .mb {
+            grid-area: 1/2/5/3;
+            border: 1px lightblue solid;
+        
+        }
+        .na{grid-area: 1/1/2/1;
+            background-color: magenta;
+        }
+        .oa{
+            background-color: springgreen;
+            grid-area: 1/1/3/2;
+        }
+        .ob{
+            background-color: springgreen;
+            grid-area: 3/1/4/2;
+        }
+        .fa{
+            grid-column: 1/2;
+        }
+        .fb{
+            grid-column: 3/4;
+        }
+        .fc{
+            grid-column: 4/5;
+        }
+        .fd{
+            grid-column: 6/7;
+        }
     </style>
 </head>
 
 <body class="g">
     <header>
-        <a>資產負債表</a>
+        <b>資產負債表</b>
     </header>
     <main>
-        <div class="i">資產</div>
-        <div class="i">負債及股東權益</div>
+        <div class="i"><b>資產</b></div>
+        <div class="i"><b>負債及股東權益</b></div>
         <div class="j">
             <div class="jb">流動資金</div>
             <div class="jc">現金</div>
@@ -77,10 +220,39 @@
             <div class="jg">應付帳款</div>
             <div class="ji">277,870</div>
         </div>
+        <div class="l">
+            <div class="la">非流動負債</div>
+            <div class="lb">長期借款</div>
+            <div class="lc">69600</div>
+        </div>
+        <div class="m">
+            <div class="ma">非流動資產</div>
+            <div class="mb">固定資產</div>
+            <div class="jd"></div>
+            <div class="jf"></div>
+            <div class="ji">1,261,096</div>
 
- 
+        </div>
+        <div class="n">
+            <div class="na">負債合計</div>
+            <div class="lc">1,982,340</div>
+        </div>
+        <div class="o">
+            <div class="oa">股東權益</div>
+            <div class="ob">股東權益合計</div>
+            <div class="jc">股本</div>
+            <div class="jd">1,102,186</div>
+            <div>保留盈餘</div>
+            <div class="jf">441,544</div>
+            <div class="jg"></div>
+            <div class="ji">1,543,730</div>
+        </div>
+    </main>
     <footer>
-
+        <div class="fa">資產合計</div>
+        <div class="fb">3,526,070</div>
+        <div class="fc">負債及股東權益</div>
+        <div class="fd">3,526,070</div>
     </footer>
 </body>
 
