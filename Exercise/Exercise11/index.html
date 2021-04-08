@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        header {
+            background-color: coral;
+            margin: 10px;
+        }
+
+        main {
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            margin-left: 10px;
+
+
+
+        }
+
+        footer {
+            background-color: gray;
+            text-align: center;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+        }
+
+        div {
+            font-family: DFKai-sb;
+            display: flex;
+            flex-direction: column;
+            border: 1px gray solid;
+
+        }
+
+        shop {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            ;
+        }
+        
+        line1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: space-between;
+            border-collapse: separate;
+
+        }
+
+        line2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+
+        }
+
+        .s_a{
+            margin: 10px;
+            font-family: DFKai-sb;
+            display: flex;
+            flex-direction: column;
+            border: 1px gray solid;
+            width: 200px;
+            height: 300px;
+        }
+        .d_a {
+            padding: 5px;
+            font-size: 1.5rem;
+            background-color: rgb(240, 191, 171);
+        }
+
+        .d_b {
+            padding: 5px;
+            background-color: rgb(240, 191, 171);
+            border-left: 1px gray dashed;
+            border-right: 1px gray dashed;
+            border-bottom: 1px gray dashed;
+            font-size: 1.5rem;
+        }
+
+        .d_c {
+            padding: 5px;
+            border: 1px gray dashed;
+            font-size: 1.5rem;
+            background-color: rgb(240, 191, 171);
+        }
+
+        name {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a:link {
+            text-decoration: none
+        }
+
+        money {
+            font-size: 3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <a style="font-family: 'Sriracha', cursive;color: white;">My Shop</a>
+    </header>
+    <main>
+        
+        <aside>
+            <div class="d_a"><a href="">商品分類</a></div>
+            <div class="d_b"><a href="">所有商品</a></div>
+            <div class="d_c"><a href="">暢銷商品</a></div>
+            <div class="d_c"><a href="">本日精選</a></div>
+            <div class="d_c"><a href="">新品上市</a></div>
+        </aside>
+        <shop>
+            <line1>
+                <div class="s_a">
+                    <img src="https://i.imgur.com/ZMpETy0b.gif"></a>
+                    <name>
+                        <a>蛋糕</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$150</a></money>
+                </div>
+                
+                <div class="s_a">
+                    <img src="https://i.imgur.com/ODZ7Zpzb.jpg"></a>
+                    <name>
+                        <a>滿滿的點心</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$300</a></money>
+                </div >
+                <div class="s_a">
+                    <img src="https://i.imgur.com/qT3MWAbb.jpg"></a>
+                    <name>
+                        <a>紅色的</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$666</a></money>
+                </div>
+            </line1>
+            <line2>
+                <div class="s_a">
+                    <img src="https://i.imgur.com/2G16qPab.jpg"></a>
+                    <name>
+                        <a>蛋糕</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$85</a></money>
+                </div>
+                <div class="s_a">
+                    <img src="https://i.imgur.com/fziT4jzb.gif"></a>
+                    <name>
+                        <a>魔術方塊?</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$999</a></money>
+                </div>
+            </line2>
+
+        </shop>
+    </main>
+    <footer>
+        <a>©2021 MyShop All rights reserved</a>
+    </footer>
+</body>
+
+</html>
