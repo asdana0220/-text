@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <style>
+        a {font-family: DFKai-sb;}
+
+        header {
+            background-color: coral;
+            margin: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .h_a {
+            grid-column: -1/-2;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            background-color: white;
+            margin-left: 10px;
+        }
+
+        footer {
+            background-color: gray;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+
+        aside {
+            grid-column: 1/4;
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            grid-template-rows: 42px 40px 40px 40px 40px 1fr;
+
+        }
+
+        div {
+            font-family: DFKai-sb;
+            display: grid;
+            border: 1px gray solid;
+        }
+
+        shop {
+            grid-column: 4/7;
+            display: grid;
+            grid-row: repeat(2,1fr);
+            margin-left: 10px;
+        }
+
+        line1 {
+            grid-row: 1/2;
+            display: grid;
+            border-collapse: separate;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        line2 {
+            grid-row: 2/3;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .s_a {
+            margin: 10px;
+            font-family: DFKai-sb;
+            display: grid;
+            border: 1px gray solid;
+            width: 200px;
+            height: 300px;
+        }
+
+        .d_a {
+            padding: 5px;
+            font-size: 1.5rem;
+            background-color: rgb(240, 191, 171);
+            width: 100px;
+            height: 30px;
+            border: 1px gray solid;
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .d_b {
+            padding: 5px;
+            background-color: rgb(240, 191, 171);
+            border-left: 1px gray dashed;
+            border-right: 1px gray dashed;
+            border-bottom: 1px gray dashed ;
+            font-size: 1.5rem;
+            width: 100px;
+            height: 30px;
+            grid-column: 3/4;
+            grid-row: 2/3;
+
+        }
+
+        .d_c {
+            padding: 5px;
+            border: 1px gray dashed;
+            font-size: 1.5rem;
+            background-color: rgb(240, 191, 171);
+            width: 100px;
+            height: 30px;
+            grid-column: 3/4;
+            grid-row: 3/4 4/5 5/6;
+
+        }
+
+        name {
+            display: grid;
+            grid-template-columns: 80px 1fr 90px;
+            
+        }
+
+        a:link {
+            text-decoration: none
+        }
+
+        money {
+            font-size: 3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        button{
+            width: 85px;height: 25px;
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p><a style="font-family: 'Sriracha', cursive;color: white;">My Shop</a></p>
+        <p style="font-family: DFKai-sb;" class="h_a"><a href="">商品</a>
+            <a href="">購物車</a>
+        </p>
+    </header>
+    <main>
+
+    <aside>
+        <div class="d_a"><a href="">商品分類</a></div>
+        <div class="d_b"><a href="">所有商品</a></div>
+        <div class="d_c"><a href="">暢銷商品</a></div>
+        <div class="d_c"><a href="">本日精選</a></div>
+        <div class="d_c"><a href="">新品上市</a></div>
+
+    </aside>
+        <shop>
+            <line1>
+                <div class="s_a">
+                    <img src="https://i.imgur.com/ZMpETy0b.gif" width=200>
+                    <name>
+                        <a>蛋糕</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$150</a></money>
+                </div>
+
+                <div class="s_a">
+                    <img src="https://i.imgur.com/ODZ7Zpzb.jpg"width=200>
+                    <name>
+                        <a>滿滿的點心</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$300</a></money>
+                </div>
+                <div class="s_a">
+                    <img src="https://i.imgur.com/qT3MWAbb.jpg"width=200>
+                    <name>
+                        <a>紅色的</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$666</a></money>
+                </div>
+            </line1>
+            <line2>
+                <div class="s_a">
+                    <img src="https://i.imgur.com/2G16qPab.jpg"width=200>
+                    <name>
+                        <a>蛋糕</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$85</a></money>
+                </div>
+                <div class="s_a">
+                    <img src="https://i.imgur.com/fziT4jzb.gif"width=200>
+                    <name>
+                        <a>魔術方塊?</a>
+                        <button>加入購物車</button>
+                    </name>
+                    <money><a>NT$999</a></money>
+                </div>
+            </line2>
+
+        </shop>
+    </main>
+    <footer>
+        <a>©2021 MyShop All rights reserved</a>
+    </footer>
+</body>
+
+</html>
