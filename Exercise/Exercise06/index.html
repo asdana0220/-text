@@ -1,52 +1,185 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>個人簡歷</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <style>
-        #abc{color: rgb(116, 116, 131);font-size: 1.5rem;background-color: rgba(58, 56, 54, 0.473);
+        body {
+            position:relative;
+            background-image: url(./wood-4876326_1920.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
         }
-        #def{color: rgb(218, 233, 218);font-size: 1.5rem;background-color: rgba(95, 95, 95, 0.493);}
-        img{width:450px;height:450px;}
-        #hh{background-color: rgba(0, 0, 0, 0.644);color: rgb(254, 253, 255);font-size: 2.5rem;}
-</style>
+        header{
+            background-color: rgb(37, 37, 37);
+
+        }
+        img {
+            
+            max-height: 280px;
+            float: left;
+        }
+        main {
+            overflow-y: scroll;
+            height: 30vw;
+            padding-top: 5px;
+            background-color: rgba(112, 99, 112, 0.603);
+            color: honeydew;
+        }
+        
+        
+        .list-group-item.active {
+            background-color: rgba(169, 169, 169, 0.699);
+            border-color: unset;
+        }
+        table{
+            font-size: 1.25rem;
+        }
+        footer{
+            background-color: rgb(37, 37, 37);
+        }
+    </style>
 
 </head>
-<section>
-    <a id="hh"href="https://asdana0220.github.io/-text/Exercise/index.html">作品集Exercise</a>
-    <a id="hh"href="https://asdana0220.github.io/-text/Lab/index.html">作品集Lab</a>
-    <a id="hh"href="">個人經歷</a>
 
-</section>
-<body>
-    <img src="https://yt3.ggpht.com/ytc/AAUvwniJ4ikEUzAP0fI5qBscfTf-REQX2h2F8K2UrnLx=s900-c-k-c0x00ffffff-no-rj"><br/>
-    <table border="3"cellpadding="8">
-        <caption>個人簡歷</caption>
-        <tr>
-            <td id="abc">姓名</td>
-            <td id="def">黃阿瑪</td>
-        </tr>
-        <tr>
-            <td id="abc">年齡</td>
-            <td id="def">12</td>
-        </tr>
-        <tr>
-            <td id="abc">畢業學校</td>
-            <td id="def">貓大學-系</td>
-        </tr>
-        <tr>
-            <td id="abc">興趣</td>
-            <td id="def">吃飯<br/>睡覺<br/>躺著</td>
-        </tr>
+<body class="container">
+    <div class="row">
+        <header class="col-12">
+            <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">個人經歷</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    </table>
-    <article>個人經歷</article>
-    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                作品集
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item"
+                                    href="https://asdana0220.github.io/-text/Exercise/index.html"targer="_blank">作品集Exercise</a>
+                                <a class="dropdown-item"
+                                    href="https://asdana0220.github.io/-text/Lab/index.html" target="_blank">作品集Lab</a>
+                                <div class="dropdown-divider"></div>
+                                <!-- <a class="dropdown-item" href="#"></a> -->
+                            </div>
+                            <!-- </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main class="col">
+            <div class="row justify-content-md-center" style="height: 20vh;">
+                <div class="col-4 col-md-2 ">
+                    <div id="list-example" class="list-group" style="position: fixed">
+                        <a class="list-group-item list-group-item-action active" href="#list-item-1">基本資料</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">個人經歷</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">程式學習</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example;">
+                        <h4 id="list-item-1">基本資料</h4>
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <img
+                                    src="https://yt3.ggpht.com/ytc/AAUvwniJ4ikEUzAP0fI5qBscfTf-REQX2h2F8K2UrnLx=s900-c-k-c0x00ffffff-no-rj">
+                            </div>
+                            <div>
+
+                            </div>
+
+                            <div class="col col-md-6" >
+                                <table class="table-sm table-hover">
+                                    <tr>
+                                        <th scope="row">姓名</th>
+                                        <td>Dana</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">年齡</th>
+                                        <td>28</td>
+                                    <tr>
+                                        <th scope="row">畢業科系</th>
+                                        <td colspan="2">台中教育大學</br>科學教育與應用學系</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">興趣</th>
+                                        <td colspan="2">畫畫</br>看電影</br>旅遊</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                        </br></br>
+                        <h4 id="list-item-2">個人經歷</h4>
+                        </br></br>
+                        <p style="font-size: 1.25rem;">
+                            <a>超商店員-1年</a></br></br>
+                            <a>麵包店店員-6個月</a></br></br>
+                            <a>補習班行政班導-3年</a></br></br>
+                            <a>澳洲打工度假-1年</a></br></br>
+                        </p>
+                        </br></br>
+                        <h4 id="list-item-3">程式學習</h4>
+                        </br></br>
+                        <p>
+                            <a>python</a></br></br>
+                            <a>Web網頁設計</a></br></br>
+                        </p>
+                    </div>
+
+                </div>
+        </main>
+        <footer class="col-12">
+            <a href="tel:+886-987654321">與我聯絡：0987654321</a>
+            <a href="mailto:a3537312934@yahoo.com.tw"></a>
+        </footer>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.scrollspy-example').scrollspy({
+                target: '#list-example'
+            });
+        })
+    </script>
+    <script>$('[data-spy="scroll"]').each(function () {
+            var $spy = $(this).scrollspy('refresh')
+        })
+        $('main').scrollspy({ target: '#list-example' })</script>
 </body>
-<footer>
-    <a href="tel:+886-987654321">與我聯絡：0987654321</a>
-    <a href="mailto:a3537312934@yahoo.com.tw"></a>
-</footer>
+
+
 </html>
